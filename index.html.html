@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Clara - Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="#home">Home</a>
+            <a class="cabecalho__menu__link" href="#sobre-mim">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="#projetos">Projetos</a>
+        </nav>
+    </header>  
+
+    <main class="apresentacao" id="home">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">
+                Meu Universo Criativo: 
+                <strong class="titulo-destaque">Código e Arte</strong>
+            </h1>
+
+            <p class="apresentacao__conteudo__texto">
+                Olá! Meu nome é <strong>Ana Clara</strong>, e este espaço foi criado para apresentar minha trajetória criativa.
+                Aqui, compartilho os conhecimentos adquiridos no estudo de <strong>HTML e CSS</strong>, bem como minhas ilustrações e projetos.
+                Uma fusão entre <strong class="destaque__sub">Arte</strong> e <strong class="destaque__sub">Tecnologia</strong>.
+            </p>
+
+            <div class="apresentacao__links">
+                <h2 class="apresentacao_links_subtitulo">Acesse minhas redes</h2>
+
+                <a class="links__botao" href="https://www.linkedin.com/in/anaclara-silveira/" target="_blank">
+                    <img src="./assents/linkedin.png" alt="Logo Linkedin">
+                    Linkedin
+                </a>
+
+                <a class="links__botao" href="https://www.behance.net/anaclasilveir7" target="_blank">
+                    <img src="./assents/behance.png" alt="Logo Behance">
+                    Behance
+                </a>
+
+                <a class="links__botao" href="https://github.com/anclsx" target="_blank">
+                    <img src="./assents/GitHub.png" alt="Logo GitHub">
+                    GitHub
+                </a>
+            </div>
+        </section>
+
+        <img class="desenho-img" src="./assents/desenho.jpg" alt="Ilustração feita por Ana Clara">
+    </main>
+
+    <section class="sobre-mim" id="sobre-mim">
+        <h2>Sobre mim</h2>
+        <p>
+            Sou uma profissional em transição para a área de Tecnologia, com foco em Desenvolvimento Front-End e UX/UI.
+            Tenho experiência na área administrativa em ambiente hospitalar, o que me trouxe organização, atenção a detalhes
+            e visão de processos. Hoje aplico essa bagagem na criação de interfaces mais intuitivas, acessíveis e visuais,
+            unindo minha paixão por arte e código.
+        </p>
+    </section>
+
+    <!-- SEÇÃO DE PROJETOS -->
+    <section class="projetos" id="projetos">
+        <h2>Projetos em destaque</h2>
+        <p class="projetos__intro">
+            Aqui estão alguns projetos que refletem minha jornada em Front-End e UX/UI.
+            Aos poucos, vou ampliando e refinando este espaço com novos estudos e experiências.
+        </p>
+
+        <div class="projetos__grid">
+            <!-- PROJETO 1 -->
+            <article class="projeto-card">
+                <h3>Portfólio Pessoal</h3>
+                <p>
+                    Landing page responsiva desenvolvida com HTML e CSS, unindo identidade visual,
+                    apresentação profissional e links para minhas redes e trabalhos.
+                </p>
+                <span class="projeto-tag">HTML • CSS</span>
+                <a href="https://github.com/anclsx" target="_blank" class="projeto-link">
+                    Ver no GitHub
+                </a>
+            </article>
+
+            <!-- PROJETO 2 -->
+            <article class="projeto-card">
+                <h3>Aplicação JavaScript</h3>
+                <p>
+                    Projeto em desenvolvimento para praticar lógica, manipulação do DOM e interação com o usuário,
+                    como uma lista de tarefas ou conversor simples.
+                </p>
+                <span class="projeto-tag">JavaScript • UI</span>
+                <a href="https://github.com/anclsx" target="_blank" class="projeto-link">
+                    Ver no GitHub
+                </a>
+            </article>
+
+            <!-- PROJETO 3 -->
+            <article class="projeto-card">
+                <h3>Case UX/UI no Figma</h3>
+                <p>
+                    Estudo de interface com foco em experiência do usuário, explorando hierarquia visual,
+                    tipografia, cores e navegação em protótipo interativo.
+                </p>
+                <span class="projeto-tag">Figma • UX/UI</span>
+                <a href="https://www.behance.net/anaclasilveir7" target="_blank" class="projeto-link">
+                    Ver no Behance
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <footer class="contato">
+        <p>Desenvolvido por Ana Clara</p>
+    </footer>
+
+</body>
+</html>

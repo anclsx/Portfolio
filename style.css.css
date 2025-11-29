@@ -1,0 +1,297 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GERAL */
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #121212;
+    color: #eeeeee;
+}
+
+/* CORES DE DESTAQUE */
+.titulo-destaque,
+.destaque__sub {
+   color: #FF6b81;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+    padding: 16px 10%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 24px;
+    font-size: 18px;
+}
+
+.cabecalho__menu__link {
+    text-decoration: none;
+    color: #eeeeee;
+    font-weight: 500;
+}
+
+.cabecalho__menu__link:hover {
+    color: #FF6b81;
+}
+
+/* SEÇÃO PRINCIPAL */
+.apresentacao {
+    padding: 6% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.apresentacao__conteudo {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* LINKS / BOTÕES */
+.apresentacao_links_subtitulo {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    align-items: center;
+}
+
+.links__botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border: 2px solid #FF6b81;
+    border-radius: 12px;
+    padding: 15px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #eeeeee;
+    transition: 0.3s;
+    width: 100%;
+    max-width: 380px;
+}
+
+.links__botao img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.links__botao:hover {
+    background-color: #FF6b81;
+    color: #121212;
+}
+
+/* IMAGEM PRINCIPAL */
+.desenho-img {
+    width: 380px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    object-fit: cover;
+}
+
+/* SEÇÃO SOBRE MIM */
+.sobre-mim {
+    padding: 0 10% 60px 10%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.sobre-mim h2 {
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+.sobre-mim p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* FOOTER */
+.contato {
+    text-align: center;
+    padding: 20px;
+    background-color: #FF6b81;
+    color: #121212;
+    font-weight: 600;
+}
+
+/* RESPONSIVO */
+@media (max-width: 850px) {
+    .apresentacao {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .apresentacao__conteudo {
+        max-width: 100%;
+    }
+
+    .desenho-img {
+        width: 80%;
+    }
+
+    .cabecalho {
+        padding: 16px 5%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+}
+
+/* SEÇÃO SOBRE MIM */
+.sobre-mim {
+    padding: 0 10% 60px 10%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.sobre-mim h2 {
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+.sobre-mim p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* SEÇÃO PROJETOS */
+.projetos {
+    padding: 0 10% 80px 10%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.projetos h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.projetos__intro {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.projetos__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.projeto-card {
+    background-color: #1e1e1e;
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-height: 220px;
+}
+
+.projeto-card h3 {
+    font-size: 20px;
+    color: #FF6b81;
+}
+
+.projeto-card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.projeto-tag {
+    display: inline-block;
+    margin-top: 4px;
+    font-size: 13px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background-color: #FF6b81;
+    color: #121212;
+    align-self: flex-start;
+}
+
+.projeto-link {
+    margin-top: auto;
+    font-size: 14px;
+    text-decoration: none;
+    color: #eeeeee;
+    border: 1px solid #FF6b81;
+    border-radius: 999px;
+    padding: 8px 14px;
+    align-self: flex-start;
+    transition: 0.3s;
+}
+
+.projeto-link:hover {
+    background-color: #FF6b81;
+    color: #121212;
+}
+
+/* FOOTER */
+.contato {
+    text-align: center;
+    padding: 20px;
+    background-color: #FF6b81;
+    color: #121212;
+    font-weight: 600;
+}
+
+/* RESPONSIVO */
+@media (max-width: 850px) {
+    .apresentacao {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .apresentacao__conteudo {
+        max-width: 100%;
+    }
+
+    .desenho-img {
+        width: 80%;
+    }
+
+    .cabecalho {
+        padding: 16px 5%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 8px;
+    }
+
+    .projetos__grid {
+        grid-template-columns: 1fr;
+    }
+}
